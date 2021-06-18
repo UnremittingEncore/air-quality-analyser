@@ -1,1 +1,1 @@
-# air-quality-analyser
+# Air Quality Analyser
