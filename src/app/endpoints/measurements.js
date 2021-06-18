@@ -12,6 +12,12 @@
         $scope.order_by = "date";
         $scope.sort = "desc";
         $scope.busy = 0;
+        $scope.markers = {};
+        $scope.mapCenter = {
+            lat: 0,
+            lng: 0,
+            zoom: 2
+        };
 
         $scope.updateUrl = function(model) {
             var urlValue = $scope[model];
@@ -86,11 +92,13 @@
         $scope.get_countries();
 
         $scope.fetch = function() {
+            $scope.markers = {};
             $scope.busy = 1;
 
             return dataService.measurements(params)
                 .then(function(data) {
                     $scope.results = data.results;
+                    $scope.results.forEach(getMarkers);
                     $scope.total = data.meta.found;
                     $scope.limit = data.meta.limit;
                     $scope.busy = 0;
@@ -100,6 +108,15 @@
         $scope.submit = function() {
             $scope.fetch();
         };
-
+        function getMarkers(result, index, ar) {
+            if (result.coordinates) {
+                $scope.markers[index] = {
+                    lat: result.coordinates.latitude,
+                    lng: result.coordinates.longitude,
+                    message: result.location + ", " + result.city + "<br/>" + result.count + " measurements",
+                    draggable: false
+                };
+            }
+        }
     }
 })();

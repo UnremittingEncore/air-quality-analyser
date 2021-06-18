@@ -2,5 +2,6 @@
   <measurements-form></measurements-form>
   <p ng-show="busy">Fetching...</p>
   <p ng-show="results">Showing {{ results.length }} of {{ total }} measurements.</p>
+  <leaflet ng-show="results" markers="markers" center="mapCenter" height="600px"></leaflet>
   <measurements-table ng-show="results"></measurements-table>
 </div>
