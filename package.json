@@ -1,7 +1,7 @@
 {
   "name": "openaq-browser",
   "version": "0.1.0",
-  "description": "A web client for OpenAQ API.",
+  "description": "A web client for Air Quality Analyser.",
   "main": "index.html",
   "scripts": {
     "start": "grunt serve",
@@ -11,17 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dolugen/openaq-browser.git"
+    "url": "https://github.com/UnremittingEncore/air-quality-analyser.git"
   },
   "keywords": [
     "openaq"
   ],
-  "author": "Dolugen Buuralda <dolugen@gmail.com>",
+  "author": "Dolugen Buuralda & UnremittingEncore",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dolugen/openaq-browser/issues"
+    "url": "https://github.com/UnremittingEncore/air-quality-analyser/issues"
   },
-  "homepage": "https://github.com/dolugen/openaq-browser",
+  "homepage": "https://github.com/UnremittingEncore/air-quality-analyser",
   "private": true,
   "devDependencies": {
     "angular-mocks": "~1.4.8",
