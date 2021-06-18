@@ -1,5 +1,5 @@
 {
-  "name": "openaq-browser",
+  "name": "air-quality-analyser",
   "version": "0.1.0",
   "description": "A web client for Air Quality Analyser.",
   "main": "index.html",
