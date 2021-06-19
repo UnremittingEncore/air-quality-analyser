@@ -20,11 +20,7 @@
         $scope.date_from = weekAgo;
 
         var initial_locations = [
-            {
-                'country': 'MN',
-                'city': 'Ulaanbaatar',
-                'location': 'Tolgoit'                
-            },
+            
             {
                 'country': 'GB',
                 'city': 'London',
