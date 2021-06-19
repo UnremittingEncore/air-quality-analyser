@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A web client for Air Quality Analyser.",
   "main": "index.html",
+  "engines": {
+    "node": "^16.3.0"
+  },
   "scripts": {
     "start": "grunt serve",
     "test": "grunt karma:continuous",
