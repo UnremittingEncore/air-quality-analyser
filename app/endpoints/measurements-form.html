@@ -1,0 +1,57 @@
+<form class="form-horizontal" ng-submit="submit()">
+  <div class="col-sm-12">
+    <form-query-url></form-query-url>
+  </div>
+
+  <style>
+    .panel-default > .panel-heading {
+      color: rgb(252, 252, 252);
+      background-color: #04bd67;}
+    .panel-default {
+      border-color: #04bd67;}
+    .panel-default-second > .panel-heading-second {
+      color: rgb(252, 252, 252);
+      padding: 10px;
+      background-color: #bd0442;}
+    .panel-default-second {
+      border-color: #bd0442;}
+  </style>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <panel-main></panel-main>
+      <fetch-button></fetch-button>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">General Health Tip</div>
+        <div class="panel-body">
+          <p>
+            Reduce the intensity of your outdoor activities. Keep relevant medication(s) 
+            available and consult a doctor with any questions. It is recommended to limit
+             the time you are near busy roads, construction sites, open fires and other sources 
+             of smoke. In addition, consider reducing the time you spend near industrial emission stacks.
+              Staying indoors with an activated air filtration system would be best for your long term health.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-default-second">
+        <div class="panel-heading-second">How Do We Calculate Air Quality?</div>
+        <div class="panel-body">
+          <p>
+            In order to provide reliable and location-based air quality information. 
+            We fetch air quality parameters from an open source OpenAQ API on an hourly basis. 
+            <br>
+            OpenAQ aggregates and harmonizes disparate air quality data into a single format 
+            so that more people can access the data for more impactful purposes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</form>
