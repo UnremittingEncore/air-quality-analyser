@@ -8,7 +8,7 @@
                 id="country"
                 ng-model="country"
                 ng-change="updateUrl('country'); get_cities()">
-          <option value="">All countries</option>
+          <option value="">Countries</option>
           <option ng-repeat="country in countries" value="{{ country.code }}">
             {{ country.name }}
           </option>
@@ -22,7 +22,7 @@
                 id="city"
                 ng-model="city"
                 ng-change="updateUrl('city'); get_locations()">
-          <option value="">All cities</option>
+          <option value="">Cities</option>
           <option ng-repeat="city in cities" value="{{ city.city }}">
             {{ city.city }}
           </option>
@@ -36,7 +36,7 @@
                 id="location"
                 ng-model="location"
                 ng-change="updateUrl('location')">
-          <option value="">All locations</option>
+          <option value="">Locations</option>
           <option ng-repeat="location in locations" value="{{ location.location }}">
             {{ location.location }}
           </option>
@@ -50,7 +50,7 @@
                 id="parameter"
                 ng-model="parameter"
                 ng-change="updateUrl('parameter')">
-          <option value="">All parameters</option>
+          <option value="">Parameters</option>
           <option value="pm25">PM 2.5</option>
           <option value="pm10">PM 10</option>
           <option value="so2">SO₂</option>

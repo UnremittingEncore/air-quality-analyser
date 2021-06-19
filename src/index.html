@@ -49,7 +49,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#/">Home</a>
+      <a class="navbar-brand" href="#/" style="color: teal;">Home</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,11 +61,11 @@
         <li ng-class="{ active: urlLocation.path() == '/fetches' }" ng-click="isActive('/fetches')"><a href="#/fetches">Fetches</a></li>
         <li ng-class="{ active: urlLocation.path() == '/latest' }" ng-click="isActive('/latest')"><a href="#/latest">Latest</a></li>
         -->
-        <li ng-class="{ active: urlLocation.path() == '/locations' }" ng-click="isActive('/locations')"><a href="#/locations">Location Support</a></li>
-        <li ng-class="{ active: urlLocation.path() == '/measurements' }"><a href="#/measurements">Air Quality</a></li>
-        <li ng-class="{ active: urlLocation.path() == '/parameters' }"><a href="#/parameters">Parameters</a></li>
-        <li ng-class="{ active: urlLocation.path() == '/graph' }"><a href="#/graph">Analytics</a></li>
-        <li ng-class="{ active: urlLocation.path() == '/sources' }"><a href="#/sources">Sources</a></li>
+        <li ng-class="{ active: urlLocation.path() == '/locations' }" ng-click="isActive('/locations')"><a href="#/locations" style="color: rgb(94, 82, 107);">Location Support</a></li>
+        <li ng-class="{ active: urlLocation.path() == '/measurements' }"><a href="#/measurements" style="color: rgb(94, 82, 107);">Air Quality</a></li>
+        <li ng-class="{ active: urlLocation.path() == '/parameters' }"><a href="#/parameters" style="color: rgb(94, 82, 107);">Parameters</a></li>
+        <li ng-class="{ active: urlLocation.path() == '/graph' }"><a href="#/graph" style="color: rgb(94, 82, 107);">Analytics</a></li>
+        <li ng-class="{ active: urlLocation.path() == '/sources' }"><a href="#/sources" style="color: rgb(94, 82, 107);">Sources</a></li>
         
         <!--
         
@@ -74,7 +74,11 @@
         -->
       </ul>
       <div class="nav navbar-nav navbar-right hidden-sm">
-        <li><a href="https://docs.openaq.org/" title="Go to OpenAQ API docs">Docs</a></li>
+        <li><a href="https://docs.openaq.org/" title="Go to OpenAQ API docs" 
+        style=
+          "color: teal;
+          font-size: medium;"
+          >Docs</a></li>
       </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -94,8 +98,16 @@
     <footer>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 text-muted">
-          An open source web client for <a href="https://github.com/UnremittingEncore/air-quality-analyser">Air Quality Analyser</a>
+        <div class="col-sm-12 text-muted"
+        style=
+          "color: rgb(94, 82, 107);
+          font-size: small;"
+        >
+          An open source web client for <a href="https://github.com/UnremittingEncore/air-quality-analyser" 
+          style=
+          "color: teal;
+          font-size: small;"
+          >Air Quality Analyser</a>
         </div>
       </div>
     </div>
